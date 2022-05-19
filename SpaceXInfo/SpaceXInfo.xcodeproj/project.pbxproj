@@ -12,6 +12,14 @@
 		CC99E8F62836D84A007D3171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC99E8F52836D84A007D3171 /* Assets.xcassets */; };
 		CC99E8F92836D84A007D3171 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC99E8F82836D84A007D3171 /* Preview Assets.xcassets */; };
 		CC99E92E2836DA65007D3171 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CC99E92D2836DA65007D3171 /* Alamofire */; };
+		CC99E9492836DBB7007D3171 /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9412836DBB6007D3171 /* Failure.swift */; };
+		CC99E94A2836DBB7007D3171 /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9422836DBB6007D3171 /* Patch.swift */; };
+		CC99E94B2836DBB7007D3171 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9432836DBB6007D3171 /* Launch.swift */; };
+		CC99E94C2836DBB7007D3171 /* Reddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9442836DBB6007D3171 /* Reddit.swift */; };
+		CC99E94D2836DBB7007D3171 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9452836DBB6007D3171 /* Core.swift */; };
+		CC99E94E2836DBB7007D3171 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9462836DBB7007D3171 /* Links.swift */; };
+		CC99E94F2836DBB7007D3171 /* Fairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9472836DBB7007D3171 /* Fairing.swift */; };
+		CC99E9502836DBB7007D3171 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9482836DBB7007D3171 /* Flickr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,14 @@
 		CC99E8F82836D84A007D3171 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC99E8FE2836D84A007D3171 /* SpaceXInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC99E9082836D84A007D3171 /* SpaceXInfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXInfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC99E9412836DBB6007D3171 /* Failure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
+		CC99E9422836DBB6007D3171 /* Patch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patch.swift; sourceTree = "<group>"; };
+		CC99E9432836DBB6007D3171 /* Launch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		CC99E9442836DBB6007D3171 /* Reddit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reddit.swift; sourceTree = "<group>"; };
+		CC99E9452836DBB6007D3171 /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		CC99E9462836DBB7007D3171 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		CC99E9472836DBB7007D3171 /* Fairing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fairing.swift; sourceTree = "<group>"; };
+		CC99E9482836DBB7007D3171 /* Flickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flickr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +104,7 @@
 		CC99E8F02836D849007D3171 /* SpaceXInfo */ = {
 			isa = PBXGroup;
 			children = (
+				CC99E9402836DB94007D3171 /* Model */,
 				CC99E8F12836D849007D3171 /* SpaceXInfoApp.swift */,
 				CC99E8F32836D849007D3171 /* ContentView.swift */,
 				CC99E8F52836D84A007D3171 /* Assets.xcassets */,
@@ -102,6 +119,21 @@
 				CC99E8F82836D84A007D3171 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC99E9402836DB94007D3171 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC99E9452836DBB6007D3171 /* Core.swift */,
+				CC99E9412836DBB6007D3171 /* Failure.swift */,
+				CC99E9472836DBB7007D3171 /* Fairing.swift */,
+				CC99E9482836DBB7007D3171 /* Flickr.swift */,
+				CC99E9432836DBB6007D3171 /* Launch.swift */,
+				CC99E9462836DBB7007D3171 /* Links.swift */,
+				CC99E9422836DBB6007D3171 /* Patch.swift */,
+				CC99E9442836DBB6007D3171 /* Reddit.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +273,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC99E8F42836D849007D3171 /* ContentView.swift in Sources */,
+				CC99E94C2836DBB7007D3171 /* Reddit.swift in Sources */,
+				CC99E9502836DBB7007D3171 /* Flickr.swift in Sources */,
+				CC99E9492836DBB7007D3171 /* Failure.swift in Sources */,
+				CC99E94D2836DBB7007D3171 /* Core.swift in Sources */,
+				CC99E94A2836DBB7007D3171 /* Patch.swift in Sources */,
+				CC99E94F2836DBB7007D3171 /* Fairing.swift in Sources */,
+				CC99E94B2836DBB7007D3171 /* Launch.swift in Sources */,
 				CC99E8F22836D849007D3171 /* SpaceXInfoApp.swift in Sources */,
+				CC99E94E2836DBB7007D3171 /* Links.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
