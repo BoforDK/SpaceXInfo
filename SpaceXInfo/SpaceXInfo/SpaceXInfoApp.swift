@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SpaceXInfoApp: App {
+    @State var appStorage = AppStorage()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(appStorage)
         }
     }
 }

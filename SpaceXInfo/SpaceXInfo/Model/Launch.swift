@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Launch: Codable {
+struct Launch: Decodable, Identifiable {
     var fairings: Fairing?
     var links: Links
     var staticFireDateUtc: Date?
@@ -17,6 +17,7 @@ struct Launch: Codable {
     var rocket: String?
     var success: Bool?
     var failures: [Failure]
+    var details: String?
     var crewIds: [String]
     var shipIds: [String]
     var capsuleIds: [String]
@@ -33,7 +34,8 @@ struct Launch: Codable {
     var autoUpdate: Bool
     var tbd: Bool
     var launchLibraryId: UUID?
-    var id: String?
+    var launchId: String
+    let id: UUID
 }
 
 extension Launch {
@@ -47,6 +49,7 @@ extension Launch {
         case rocket
         case success
         case failures
+        case details
         case crewIds = "crew"
         case shipIds = "ships"
         case capsuleIds = "capsules"
@@ -63,7 +66,7 @@ extension Launch {
         case autoUpdate
         case tbd
         case launchLibraryId
-        case id
+        case launchId = "id"
     }
     
     enum DatePrecision: String, Codable {
@@ -81,6 +84,7 @@ extension Launch {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
+        self.id = UUID()
         self.fairings = try container.decode(Fairing?.self, forKey: .fairings)
         self.links = try container.decode(Links.self, forKey: .links)
         self.net = try container.decode(Bool.self, forKey: .net)
@@ -88,6 +92,7 @@ extension Launch {
         self.rocket = try container.decode(String?.self, forKey: .rocket)
         self.success = try container.decode(Bool?.self, forKey: .success)
         self.failures = try container.decode([Failure].self, forKey: .failures)
+        self.details = try container.decode(String?.self, forKey: .details)
         self.crewIds = try container.decode([String].self, forKey: .crewIds)
         self.shipIds = try container.decode([String].self, forKey: .shipIds)
         self.capsuleIds = try container.decode([String].self, forKey: .capsuleIds)
@@ -101,7 +106,7 @@ extension Launch {
         self.autoUpdate = try container.decode(Bool.self, forKey: .autoUpdate)
         self.tbd = try container.decode(Bool.self, forKey: .tbd)
         self.launchLibraryId = try container.decode(UUID?.self, forKey: .launchLibraryId)
-        self.id = try container.decode(String?.self, forKey: .id)
+        self.launchId = try container.decode(String.self, forKey: .launchId)
         
         let intDateUnix = try container.decode(Int.self, forKey: .dateUnix)
         self.dateUnix = Date(timeIntervalSince1970: TimeInterval(intDateUnix))
