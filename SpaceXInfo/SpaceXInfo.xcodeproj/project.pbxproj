@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC76D57A2838D08A007F6D08 /* StringToDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76D5792838D08A007F6D08 /* StringToDateFormatter.swift */; };
 		CC99E8F22836D849007D3171 /* SpaceXInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E8F12836D849007D3171 /* SpaceXInfoApp.swift */; };
 		CC99E8F42836D849007D3171 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E8F32836D849007D3171 /* ContentView.swift */; };
 		CC99E8F62836D84A007D3171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC99E8F52836D84A007D3171 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC76D5792838D08A007F6D08 /* StringToDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToDateFormatter.swift; sourceTree = "<group>"; };
 		CC99E8EE2836D849007D3171 /* SpaceXInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC99E8F12836D849007D3171 /* SpaceXInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXInfoApp.swift; sourceTree = "<group>"; };
 		CC99E8F32836D849007D3171 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC76D5782838D07C007F6D08 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CC76D5792838D08A007F6D08 /* StringToDateFormatter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		CC99E8E52836D849007D3171 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +114,7 @@
 		CC99E8F02836D849007D3171 /* SpaceXInfo */ = {
 			isa = PBXGroup;
 			children = (
+				CC76D5782838D07C007F6D08 /* Utilities */,
 				CC99E9402836DB94007D3171 /* Model */,
 				CC99E8F12836D849007D3171 /* SpaceXInfoApp.swift */,
 				CC99E8F32836D849007D3171 /* ContentView.swift */,
@@ -281,6 +292,7 @@
 				CC99E94F2836DBB7007D3171 /* Fairing.swift in Sources */,
 				CC99E94B2836DBB7007D3171 /* Launch.swift in Sources */,
 				CC99E8F22836D849007D3171 /* SpaceXInfoApp.swift in Sources */,
+				CC76D57A2838D08A007F6D08 /* StringToDateFormatter.swift in Sources */,
 				CC99E94E2836DBB7007D3171 /* Links.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
