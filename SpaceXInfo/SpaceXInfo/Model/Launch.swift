@@ -147,3 +147,43 @@ extension Launch {
         }
     }
 }
+
+
+extension Launch {
+    enum SortedKeys: String, CaseIterable {
+        case dateUnix = "Date"
+        case name = "Name"
+        case flightNumber = "Flight number"
+        
+        var getFilter: (Launch, Launch) -> Bool {
+            switch self {
+            case .flightNumber:
+                return sortByFlightNumber
+            case .name:
+                return sortByName
+            case .dateUnix:
+                return sortByDateUnix
+            }
+        }
+        
+        private func sortByFlightNumber(lhs: Launch, rhs: Launch) -> Bool{
+            lhs.flightNumber > rhs.flightNumber
+        }
+        
+        private func sortByName(lhs: Launch, rhs: Launch) -> Bool{
+            lhs.name.caseInsensitiveCompare(rhs.name) == .orderedAscending
+        }
+        
+        private func sortByDateUnix(lhs: Launch, rhs: Launch) -> Bool{
+            lhs.dateUnix > rhs.dateUnix
+        }
+        
+        init(rawValue: String?, defaultValue: SortedKeys = .dateUnix) {
+            if rawValue == nil {
+                self = defaultValue
+            } else {
+                self = Self.init(rawValue: rawValue!) ?? defaultValue
+            }
+        }
+    }
+}

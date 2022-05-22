@@ -130,6 +130,7 @@
 		CC99E8F02836D849007D3171 /* SpaceXInfo */ = {
 			isa = PBXGroup;
 			children = (
+				CCF6EFDF283A2B0500BC8F11 /* ViewModels */,
 				CC76D57D283907BE007F6D08 /* Views */,
 				CC76D5782838D07C007F6D08 /* Utilities */,
 				CC99E9402836DB94007D3171 /* Model */,
@@ -162,6 +163,13 @@
 				CC99E9442836DBB6007D3171 /* Reddit.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CCF6EFDF283A2B0500BC8F11 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
