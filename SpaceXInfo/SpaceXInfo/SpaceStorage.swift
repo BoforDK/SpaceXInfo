@@ -1,5 +1,5 @@
 //
-//  AppStorage.swift
+//  SpaceStorage.swift
 //  SpaceXInfo
 //
 //  Created by Alexander Grigorov on 21.05.2022.
@@ -9,7 +9,7 @@ import Foundation
 import Combine
 import Alamofire
 
-class AppStorage: ObservableObject {
+class SpaceStorage: ObservableObject {
     @Published var launches: [Launch] = []
     private let decoder = JSONDecoder()
     private var cancellables = Set<AnyCancellable>()

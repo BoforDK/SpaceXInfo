@@ -8,27 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var appStorage: AppStorage
+    @EnvironmentObject var appStorage: SpaceStorage
+    
+    @AppStorage("sortRevert") private var sortRevert: Bool = false
+    @AppStorage("sortedKeys") private var sortBy = Launch.SortedKeys.dateUnix
+    @AppStorage("isShowingFlightNumber")private var isShowingFlightNumber = false
+    
     @State private var isShowingFlightNumberAllert = false
     @State private var isShowingSortOptions = false
     @State private var searchText = ""
-    @State private var sortRevert: Bool = UserDefaults.standard.bool(forKey: "sortRevert") {
-        didSet {
-            UserDefaults.standard.set(sortRevert, forKey: "sortRevert")
-        }
-    }
-    
-    @State private var sortBy = Launch.SortedKeys.init(rawValue: UserDefaults.standard.string(forKey: "SortedKeys")) {
-        didSet {
-            UserDefaults.standard.set(sortBy.rawValue, forKey: "SortedKeys")
-        }
-    }
-    
-    @State private var isShowingFlightNumber = UserDefaults.standard.bool(forKey: "isShowingFlightNumber") {
-        didSet {
-            UserDefaults.standard.set(isShowingFlightNumber, forKey: "isShowingFlightNumber")
-        }
-    }
     
     let columns = [
         GridItem(),

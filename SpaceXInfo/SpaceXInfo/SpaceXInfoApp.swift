@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct SpaceXInfoApp: App {
-    @State var appStorage = AppStorage()
+    @State var appStorage = SpaceStorage()
     
     var body: some Scene {
         WindowGroup {
