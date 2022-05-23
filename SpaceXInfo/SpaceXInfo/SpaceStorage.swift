@@ -25,7 +25,7 @@ class SpaceStorage: ObservableObject {
     init() {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         
-        AF.request("https://api.spacexdata.com/v4/launches", method: .get)
+        AF.request(LaunchRESTAPI.launches, method: .get)
             .validate()
             .publishDecodable(type: [Launch].self, decoder: decoder)
             .sink { data in
