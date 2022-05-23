@@ -1,5 +1,5 @@
 //
-//  LaunchDetails.swift
+//  LaunchDetailsView.swift
 //  SpaceXInfo
 //
 //  Created by Alexander Grigorov on 21.05.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LaunchDetails: View {
+struct LaunchDetailsView: View {
     var launch: Launch
     var imageSize: CGFloat = 80
     
@@ -22,13 +22,19 @@ struct LaunchDetails: View {
                     Color.purple.opacity(0.1)
                 }
                 
-                Section("Details:") {
-                    Text(launch.details ?? "No details")
-                }
+                Text("Details:")
+                    .font(.title)
+                    .padding(.top)
+                Text(launch.details ?? "No details")
                 
-                Section("Links:") {
-                    Text(launch.links.reddit.media ?? "No reddit")
+                Text("Links:")
+                    .font(.title)
+                    .padding(.top)
+                HStack {
+                    LinkView(stringLink: launch.links.reddit.media, text: "Reddit")
                 }
+                LinkView(stringLink: launch.links.article, text: "Article")
+                LinkView(stringLink: launch.links.wikipedia, text: "Wikipedia")
             }
         }
         .navigationTitle(launch.name)

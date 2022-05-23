@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC4CD055283B694800A9B205 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CD054283B694800A9B205 /* LinkView.swift */; };
 		CC76D57A2838D08A007F6D08 /* StringToDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76D5792838D08A007F6D08 /* StringToDateFormatter.swift */; };
 		CC76D57C2838F6C1007F6D08 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76D57B2838F6C1007F6D08 /* AppStorage.swift */; };
 		CC76D57F283907E4007F6D08 /* LauncheItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76D57E283907E4007F6D08 /* LauncheItem.swift */; };
-		CC76D581283915CD007F6D08 /* LaunchDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76D580283915CD007F6D08 /* LaunchDetails.swift */; };
+		CC76D581283915CD007F6D08 /* LaunchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76D580283915CD007F6D08 /* LaunchDetailsView.swift */; };
 		CC99E8F22836D849007D3171 /* SpaceXInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E8F12836D849007D3171 /* SpaceXInfoApp.swift */; };
 		CC99E8F42836D849007D3171 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E8F32836D849007D3171 /* ContentView.swift */; };
 		CC99E8F62836D84A007D3171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC99E8F52836D84A007D3171 /* Assets.xcassets */; };
@@ -44,10 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC4CD054283B694800A9B205 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		CC76D5792838D08A007F6D08 /* StringToDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToDateFormatter.swift; sourceTree = "<group>"; };
 		CC76D57B2838F6C1007F6D08 /* AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
 		CC76D57E283907E4007F6D08 /* LauncheItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncheItem.swift; sourceTree = "<group>"; };
-		CC76D580283915CD007F6D08 /* LaunchDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetails.swift; sourceTree = "<group>"; };
+		CC76D580283915CD007F6D08 /* LaunchDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsView.swift; sourceTree = "<group>"; };
 		CC99E8EE2836D849007D3171 /* SpaceXInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC99E8F12836D849007D3171 /* SpaceXInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXInfoApp.swift; sourceTree = "<group>"; };
 		CC99E8F32836D849007D3171 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,7 +106,8 @@
 			children = (
 				CC99E8F32836D849007D3171 /* ContentView.swift */,
 				CC76D57E283907E4007F6D08 /* LauncheItem.swift */,
-				CC76D580283915CD007F6D08 /* LaunchDetails.swift */,
+				CC76D580283915CD007F6D08 /* LaunchDetailsView.swift */,
+				CC4CD054283B694800A9B205 /* LinkView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				CC99E94C2836DBB7007D3171 /* Reddit.swift in Sources */,
 				CC99E9502836DBB7007D3171 /* Flickr.swift in Sources */,
 				CC99E9492836DBB7007D3171 /* Failure.swift in Sources */,
+				CC4CD055283B694800A9B205 /* LinkView.swift in Sources */,
 				CC76D57F283907E4007F6D08 /* LauncheItem.swift in Sources */,
 				CC99E94D2836DBB7007D3171 /* Core.swift in Sources */,
 				CC99E94A2836DBB7007D3171 /* Patch.swift in Sources */,
@@ -319,7 +323,7 @@
 				CC99E94B2836DBB7007D3171 /* Launch.swift in Sources */,
 				CC99E8F22836D849007D3171 /* SpaceXInfoApp.swift in Sources */,
 				CC76D57C2838F6C1007F6D08 /* AppStorage.swift in Sources */,
-				CC76D581283915CD007F6D08 /* LaunchDetails.swift in Sources */,
+				CC76D581283915CD007F6D08 /* LaunchDetailsView.swift in Sources */,
 				CC76D57A2838D08A007F6D08 /* StringToDateFormatter.swift in Sources */,
 				CC99E94E2836DBB7007D3171 /* Links.swift in Sources */,
 			);

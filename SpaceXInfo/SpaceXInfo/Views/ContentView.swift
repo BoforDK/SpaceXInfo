@@ -69,7 +69,7 @@ struct ContentView: View {
             .sorted { sortRevert != sortBy.getFilter($0, $1) }
         ) { launch in
             NavigationLink( destination: {
-                LaunchDetails(launch: launch)
+                LaunchDetailsView(launch: launch)
             }) {
                 LauncheItem(item: launch, showFlightNumber: isShowingFlightNumber)
             }
