@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct LauncheItem: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     var item: Launch
+    var showFlightNumber: Bool = false
     var imageSize: CGFloat = 80
     var imageBottomPadding: CGFloat = 2
     var itemPadding: CGFloat = 2
     var detailsLineLimit = 1
+    var itemWidth: CGFloat = 110
+    var itemHeight: CGFloat = 140
+    var itemHeightWithFlightNumber: CGFloat = 150
+    var itemCornerRadius: CGFloat = 10
+    var itemColor = Color.gray.opacity(0.2)
     
     var body: some View {
         VStack {
@@ -30,14 +38,20 @@ struct LauncheItem: View {
             Text(item.name)
                 .font(.title3)
                 .bold()
-                .foregroundColor(.black)
+                .foregroundColor(colorScheme == .light ? .black : .white)
                 .lineLimit(detailsLineLimit)
+            
+            if showFlightNumber {
+                Text(("\(item.flightNumber)"))
+                    .foregroundColor(colorScheme == .light ? .black : .white)
+            }
         }
-        .frame(width: 100 + 10, height: 100 + 40)
+        .frame(width: itemWidth,
+               height: showFlightNumber ? itemHeightWithFlightNumber : itemHeight)
         .background(
             Rectangle()
-                .foregroundColor(.gray.opacity(0.2))
-                .cornerRadius(10)
+                .foregroundColor(itemColor)
+                .cornerRadius(itemCornerRadius)
         )
     }
 }
