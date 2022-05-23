@@ -1,5 +1,5 @@
 //
-//  LauncheItem.swift
+//  LaunchItemView.swift
 //  SpaceXInfo
 //
 //  Created by Alexander Grigorov on 21.05.2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LauncheItem: View {
+struct LaunchItemView: View {
     @Environment(\.colorScheme) var colorScheme
     
     var item: Launch
@@ -24,16 +24,9 @@ struct LauncheItem: View {
     
     var body: some View {
         VStack {
-            AsyncImage(url: URL(string: item.links.patch.small ?? "")) { image in
-                image
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: imageSize, height: imageSize)
-            } placeholder: {
-                Color.purple.opacity(0.1)
-            }
-            .frame(width: imageSize, height: imageSize)
-            .padding(.bottom, imageBottomPadding)
+            ImageWithPlaceholderView(stringURL: item.links.patch.small)
+                .frame(width: imageSize, height: imageSize)
+                .padding(.bottom, imageBottomPadding)
             
             Text(item.name)
                 .font(.title3)

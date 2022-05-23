@@ -14,12 +14,10 @@ struct LaunchDetailsView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                AsyncImage(url: URL(string: launch.links.patch.large ?? "")) { image in
-                    image
-                        .resizable()
-                        .scaledToFill()
-                } placeholder: {
-                    Color.purple.opacity(0.1)
+                HStack {
+                    Spacer()
+                    ImageWithPlaceholderView(stringURL: launch.links.patch.large)
+                    Spacer()
                 }
                 
                 Text("Details:")

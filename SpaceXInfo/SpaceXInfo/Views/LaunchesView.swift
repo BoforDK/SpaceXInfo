@@ -59,7 +59,7 @@ struct LaunchesView: View {
             NavigationLink( destination: {
                 LaunchDetailsView(launch: launch)
             }) {
-                LauncheItem(item: launch, showFlightNumber: isShowingFlightNumber)
+                LaunchItemView(item: launch, showFlightNumber: isShowingFlightNumber)
             }
         }
     }
