@@ -15,6 +15,6 @@ struct Core: Codable {
     var reused: Bool?
     var landingAttempt: Bool?
     var landingSuccess: Bool?
-    var landingType: String? // Ocean, ASDS, RTLS etc
+    var landingType: String?
     var landpad: String?
 }

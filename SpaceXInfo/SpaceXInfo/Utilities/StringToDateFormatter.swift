@@ -8,11 +8,6 @@
 import Foundation
 
 class StringToDateFormatter {
-    enum DateFormat: String {
-        case utc = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-        case localUTC = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
-    }
-    
     let formatter: DateFormatter
     
     let dateFormat: DateFormat
@@ -25,5 +20,13 @@ class StringToDateFormatter {
     
     func date(from: String) -> Date? {
         return formatter.date(from: from)
+    }
+}
+
+// MARK: Date format enum
+extension StringToDateFormatter {
+    enum DateFormat: String {
+        case utc = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        case localUTC = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
     }
 }

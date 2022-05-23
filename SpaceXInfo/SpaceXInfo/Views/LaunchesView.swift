@@ -10,13 +10,13 @@ import SwiftUI
 struct LaunchesView: View {
     var launches: [Launch]
     
-    @AppStorage("sortRevert") var sortRevert: Bool = false
+    @AppStorage("sortRevert") var isSortedReverse: Bool = false
     @AppStorage("sortedKeys") var sortBy = Launch.SortedKeys.dateUnix
     @AppStorage("isShowingFlightNumber")var isShowingFlightNumber = false
     
     @State var isShowingFlightNumberAllert = false
     @State var isShowingSortOptions = false
-    @State var searchText = ""
+    @State var searchedText = ""
     
     let columns = [
         GridItem(),
@@ -31,7 +31,7 @@ struct LaunchesView: View {
                     launchItems
                 }
             }
-            .searchable(text: $searchText)
+            .searchable(text: $searchedText)
             .navigationTitle("Space X Launches")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -53,9 +53,8 @@ struct LaunchesView: View {
     
     var launchItems: some View {
         ForEach(launches
-            .filter { searchText.isEmpty ? true : $0.name.lowercased().contains(searchText.lowercased())}
-            .sorted { sortRevert != sortBy.getFilter($0, $1) }
-        ) { launch in
+            .filter { searchedText.isEmpty ? true : $0.name.lowercased().contains(searchedText.lowercased())}
+            .sorted { isSortedReverse != sortBy.getFilter($0, $1) }) { launch in
             NavigationLink( destination: {
                 LaunchDetailsView(launch: launch)
             }) {
@@ -76,10 +75,10 @@ struct LaunchesView: View {
         ForEach(Launch.SortedKeys.allCases, id: \.self) { sortBy in
             Button(sortBy.rawValue) {
                 if self.sortBy == sortBy {
-                    sortRevert.toggle()
+                    isSortedReverse.toggle()
                 } else {
                     self.sortBy = sortBy
-                    sortRevert = false
+                    isSortedReverse = false
                 }
             }
         }

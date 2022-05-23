@@ -11,7 +11,7 @@ struct LaunchItemView: View {
     @Environment(\.colorScheme) var colorScheme
     
     var item: Launch
-    var showFlightNumber: Bool = false
+    var showFlightNumber = false
     var imageSize: CGFloat = 80
     var imageBottomPadding: CGFloat = 2
     var itemPadding: CGFloat = 2

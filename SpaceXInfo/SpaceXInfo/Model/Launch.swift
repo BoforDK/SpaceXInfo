@@ -38,6 +38,7 @@ struct Launch: Decodable, Identifiable {
     let id: UUID
 }
 
+// MARK: Coding keys
 extension Launch {
     enum CodingKeys: String, CodingKey {
         case fairings
@@ -77,6 +78,7 @@ extension Launch {
     }
 }
 
+// MARK: init from decoder
 extension Launch {
     private static let localUTCDateFormatter = StringToDateFormatter(dateFormat: .localUTC)
     private static let UTCDateFormatter = StringToDateFormatter(dateFormat: .utc)
@@ -148,7 +150,7 @@ extension Launch {
     }
 }
 
-
+// MARK: Sorted keys
 extension Launch {
     enum SortedKeys: String, CaseIterable {
         case dateUnix = "Date"

@@ -28,9 +28,8 @@ struct LaunchDetailsView: View {
                 Text("Links:")
                     .font(.title)
                     .padding(.top)
-                HStack {
-                    LinkView(stringLink: launch.links.reddit.media, text: "Reddit")
-                }
+                
+                LinkView(stringLink: launch.links.reddit.media, text: "Reddit")
                 LinkView(stringLink: launch.links.article, text: "Article")
                 LinkView(stringLink: launch.links.wikipedia, text: "Wikipedia")
             }

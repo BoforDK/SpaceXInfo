@@ -14,12 +14,6 @@ class AppState: ObservableObject {
     private var cancellables: AnyCancellable!
     @Published private(set) var state: State
     
-    enum State {
-        case loading
-        case error(AFError)
-        case done([Launch])
-    }
-    
     init() {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         
@@ -32,7 +26,7 @@ class AppState: ObservableObject {
         cancellables = AF.request(LaunchRESTAPI.launches, method: .get)
             .validate()
             .publishDecodable(type: [Launch].self, decoder: decoder)
-            .sink(receiveValue: recieveDate)
+            .sink(receiveValue: recieveData)
     }
     
     func reloadData() {
@@ -41,11 +35,20 @@ class AppState: ObservableObject {
         loadData()
     }
     
-    private func recieveDate(data: DataResponse<[Launch], AFError>) {
+    private func recieveData(data: DataResponse<[Launch], AFError>) {
         if let error = data.error {
             self.state = .error(error)
         } else {
             self.state = .done(data.value ?? [])
         }
+    }
+}
+
+// MARK: - State enum
+extension AppState {
+    enum State {
+        case loading
+        case error(AFError)
+        case done([Launch])
     }
 }
