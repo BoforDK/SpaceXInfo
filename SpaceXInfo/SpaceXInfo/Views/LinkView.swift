@@ -15,7 +15,7 @@ struct LinkView: View {
         if let url = URL(string: stringLink ?? "") {
             Link(text, destination: url)
         } else {
-            Text("No link.(\(text))")
+            Text("No link (\(text))")
         }
     }
 }
