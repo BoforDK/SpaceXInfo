@@ -7,10 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC2AD88D283C0E2B00C18FDB /* LaunchesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AD88C283C0E2B00C18FDB /* LaunchesView.swift */; };
+		CC2AD88F283C108800C18FDB /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AD88E283C108800C18FDB /* ErrorView.swift */; };
+		CC2AD891283C1E5C00C18FDB /* ImageWithPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2AD890283C1E5C00C18FDB /* ImageWithPlaceholderView.swift */; };
+		CC4CD055283B694800A9B205 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CD054283B694800A9B205 /* LinkView.swift */; };
+		CC4CD057283B6C8300A9B205 /* LaunchRESTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4CD056283B6C8300A9B205 /* LaunchRESTAPI.swift */; };
+		CC76D57A2838D08A007F6D08 /* StringToDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76D5792838D08A007F6D08 /* StringToDateFormatter.swift */; };
+		CC76D57C2838F6C1007F6D08 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76D57B2838F6C1007F6D08 /* AppState.swift */; };
+		CC76D57F283907E4007F6D08 /* LaunchItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76D57E283907E4007F6D08 /* LaunchItemView.swift */; };
+		CC76D581283915CD007F6D08 /* LaunchDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC76D580283915CD007F6D08 /* LaunchDetailsView.swift */; };
 		CC99E8F22836D849007D3171 /* SpaceXInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E8F12836D849007D3171 /* SpaceXInfoApp.swift */; };
 		CC99E8F42836D849007D3171 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E8F32836D849007D3171 /* ContentView.swift */; };
 		CC99E8F62836D84A007D3171 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC99E8F52836D84A007D3171 /* Assets.xcassets */; };
 		CC99E8F92836D84A007D3171 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC99E8F82836D84A007D3171 /* Preview Assets.xcassets */; };
+		CC99E92E2836DA65007D3171 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CC99E92D2836DA65007D3171 /* Alamofire */; };
+		CC99E9492836DBB7007D3171 /* Failure.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9412836DBB6007D3171 /* Failure.swift */; };
+		CC99E94A2836DBB7007D3171 /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9422836DBB6007D3171 /* Patch.swift */; };
+		CC99E94B2836DBB7007D3171 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9432836DBB6007D3171 /* Launch.swift */; };
+		CC99E94C2836DBB7007D3171 /* Reddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9442836DBB6007D3171 /* Reddit.swift */; };
+		CC99E94D2836DBB7007D3171 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9452836DBB6007D3171 /* Core.swift */; };
+		CC99E94E2836DBB7007D3171 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9462836DBB7007D3171 /* Links.swift */; };
+		CC99E94F2836DBB7007D3171 /* Fairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9472836DBB7007D3171 /* Fairing.swift */; };
+		CC99E9502836DBB7007D3171 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99E9482836DBB7007D3171 /* Flickr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC2AD88C283C0E2B00C18FDB /* LaunchesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesView.swift; sourceTree = "<group>"; };
+		CC2AD88E283C108800C18FDB /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		CC2AD890283C1E5C00C18FDB /* ImageWithPlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithPlaceholderView.swift; sourceTree = "<group>"; };
+		CC4CD054283B694800A9B205 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
+		CC4CD056283B6C8300A9B205 /* LaunchRESTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchRESTAPI.swift; sourceTree = "<group>"; };
+		CC76D5792838D08A007F6D08 /* StringToDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringToDateFormatter.swift; sourceTree = "<group>"; };
+		CC76D57B2838F6C1007F6D08 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CC76D57E283907E4007F6D08 /* LaunchItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchItemView.swift; sourceTree = "<group>"; };
+		CC76D580283915CD007F6D08 /* LaunchDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsView.swift; sourceTree = "<group>"; };
 		CC99E8EE2836D849007D3171 /* SpaceXInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC99E8F12836D849007D3171 /* SpaceXInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXInfoApp.swift; sourceTree = "<group>"; };
 		CC99E8F32836D849007D3171 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +65,14 @@
 		CC99E8F82836D84A007D3171 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC99E8FE2836D84A007D3171 /* SpaceXInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC99E9082836D84A007D3171 /* SpaceXInfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXInfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC99E9412836DBB6007D3171 /* Failure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Failure.swift; sourceTree = "<group>"; };
+		CC99E9422836DBB6007D3171 /* Patch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Patch.swift; sourceTree = "<group>"; };
+		CC99E9432836DBB6007D3171 /* Launch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		CC99E9442836DBB6007D3171 /* Reddit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reddit.swift; sourceTree = "<group>"; };
+		CC99E9452836DBB6007D3171 /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		CC99E9462836DBB7007D3171 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		CC99E9472836DBB7007D3171 /* Fairing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fairing.swift; sourceTree = "<group>"; };
+		CC99E9482836DBB7007D3171 /* Flickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flickr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC99E92E2836DA65007D3171 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +101,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC76D5782838D07C007F6D08 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CC76D5792838D08A007F6D08 /* StringToDateFormatter.swift */,
+				CC4CD056283B6C8300A9B205 /* LaunchRESTAPI.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CC76D57D283907BE007F6D08 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC99E8F32836D849007D3171 /* ContentView.swift */,
+				CC2AD88C283C0E2B00C18FDB /* LaunchesView.swift */,
+				CC76D57E283907E4007F6D08 /* LaunchItemView.swift */,
+				CC76D580283915CD007F6D08 /* LaunchDetailsView.swift */,
+				CC4CD054283B694800A9B205 /* LinkView.swift */,
+				CC2AD88E283C108800C18FDB /* ErrorView.swift */,
+				CC2AD890283C1E5C00C18FDB /* ImageWithPlaceholderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CC99E8E52836D849007D3171 = {
 			isa = PBXGroup;
 			children = (
@@ -86,8 +145,11 @@
 		CC99E8F02836D849007D3171 /* SpaceXInfo */ = {
 			isa = PBXGroup;
 			children = (
+				CC76D57D283907BE007F6D08 /* Views */,
+				CC76D5782838D07C007F6D08 /* Utilities */,
+				CC99E9402836DB94007D3171 /* Model */,
 				CC99E8F12836D849007D3171 /* SpaceXInfoApp.swift */,
-				CC99E8F32836D849007D3171 /* ContentView.swift */,
+				CC76D57B2838F6C1007F6D08 /* AppState.swift */,
 				CC99E8F52836D84A007D3171 /* Assets.xcassets */,
 				CC99E8F72836D84A007D3171 /* Preview Content */,
 			);
@@ -100,6 +162,21 @@
 				CC99E8F82836D84A007D3171 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CC99E9402836DB94007D3171 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC99E9452836DBB6007D3171 /* Core.swift */,
+				CC99E9412836DBB6007D3171 /* Failure.swift */,
+				CC99E9472836DBB7007D3171 /* Fairing.swift */,
+				CC99E9482836DBB7007D3171 /* Flickr.swift */,
+				CC99E9432836DBB6007D3171 /* Launch.swift */,
+				CC99E9462836DBB7007D3171 /* Links.swift */,
+				CC99E9422836DBB6007D3171 /* Patch.swift */,
+				CC99E9442836DBB6007D3171 /* Reddit.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +195,9 @@
 			dependencies = (
 			);
 			name = SpaceXInfo;
+			packageProductDependencies = (
+				CC99E92D2836DA65007D3171 /* Alamofire */,
+			);
 			productName = SpaceXInfo;
 			productReference = CC99E8EE2836D849007D3171 /* SpaceXInfo.app */;
 			productType = "com.apple.product-type.application";
@@ -190,6 +270,9 @@
 				Base,
 			);
 			mainGroup = CC99E8E52836D849007D3171;
+			packageReferences = (
+				CC99E92C2836DA65007D3171 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CC99E8EF2836D849007D3171 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +316,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC99E8F42836D849007D3171 /* ContentView.swift in Sources */,
+				CC4CD057283B6C8300A9B205 /* LaunchRESTAPI.swift in Sources */,
+				CC99E94C2836DBB7007D3171 /* Reddit.swift in Sources */,
+				CC99E9502836DBB7007D3171 /* Flickr.swift in Sources */,
+				CC99E9492836DBB7007D3171 /* Failure.swift in Sources */,
+				CC4CD055283B694800A9B205 /* LinkView.swift in Sources */,
+				CC76D57F283907E4007F6D08 /* LaunchItemView.swift in Sources */,
+				CC2AD88F283C108800C18FDB /* ErrorView.swift in Sources */,
+				CC99E94D2836DBB7007D3171 /* Core.swift in Sources */,
+				CC99E94A2836DBB7007D3171 /* Patch.swift in Sources */,
+				CC99E94F2836DBB7007D3171 /* Fairing.swift in Sources */,
+				CC99E94B2836DBB7007D3171 /* Launch.swift in Sources */,
 				CC99E8F22836D849007D3171 /* SpaceXInfoApp.swift in Sources */,
+				CC2AD891283C1E5C00C18FDB /* ImageWithPlaceholderView.swift in Sources */,
+				CC76D57C2838F6C1007F6D08 /* AppState.swift in Sources */,
+				CC76D581283915CD007F6D08 /* LaunchDetailsView.swift in Sources */,
+				CC76D57A2838D08A007F6D08 /* StringToDateFormatter.swift in Sources */,
+				CC99E94E2836DBB7007D3171 /* Links.swift in Sources */,
+				CC2AD88D283C0E2B00C18FDB /* LaunchesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +497,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,6 +527,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -555,6 +657,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC99E92C2836DA65007D3171 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC99E92D2836DA65007D3171 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC99E92C2836DA65007D3171 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC99E8E62836D849007D3171 /* Project object */;
 }
